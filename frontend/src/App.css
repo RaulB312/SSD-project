@@ -4,12 +4,34 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
+  overflow: hidden;
+}
+
+
+.bgContainer {
+  width:100%;
+  height:100%;
+}
+
+video {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .login-page {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(75deg, rgb(20, 23, 33) 0%, rgb(20, 23, 33) 50%, rgba(20, 23, 33,0.8) 100%);
+  /*background: linear-gradient(75deg, rgb(20, 23, 33) 0%, rgb(20, 23, 33) 50%, rgba(20, 23, 33,0.8) 100%);*/
   display: table-cell;
   vertical-align: middle;
 }
@@ -59,4 +81,27 @@ button {
 }
 button:hover {
   filter: brightness(145%);
+}
+
+p {
+  font-family: "Avenir";
+  color: white;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.social-icons{
+  margin: 20px 0;
+}
+
+.social-icons a{
+  background-color: white;
+  border: 1px solid #9e7676;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
 }
