@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import Particle from "./components/Particle";
 import BackgroundVideo from "./components/BackgroundVideo";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const AuthPage = (props) => {
   const [isLogin, setIsLogin] = useState(true);
