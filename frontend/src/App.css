@@ -105,3 +105,34 @@ p {
   width: 30px;
   height: 30px;
 }
+
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  color: white;
+}
+
+.loading-bar {
+  width: 100px;
+  height: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.loading-progress {
+  height: 100%;
+}
+
+.loading-text {
+  font-size: 16px;
+}

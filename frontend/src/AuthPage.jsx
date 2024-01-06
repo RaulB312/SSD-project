@@ -59,9 +59,9 @@ const onSignup = (e) => {
 
   return (
     <>
-      <BackgroundVideo />
-      <Particle />
-      <div className="login-page">
+    <BackgroundVideo />
+    <Particle />
+    <div className="login-page">
         <div className="card">
           {isLogin ? (
             // Login Form
@@ -94,14 +94,11 @@ const onSignup = (e) => {
                 </svg>
                 </a>
               </div>
-              <p>
-                <h5>
-                Don't have an account?
-                <button type="button" style={{backgroundColor: "green",color:"#fff",width: "120px",height: "50px",fontSize:"20px" }}onClick={toggleMode}>
-                  Register
-                </button>
-                </h5>
-              </p>
+                <h5>Don't have an account?</h5>
+              <button type="button" style={{backgroundColor: "green",color:"#fff",width: "120px",height: "50px",fontSize:"20px" }}onClick={toggleMode}>
+                Register
+              </button>
+              
             </form>
           ) : (
             // Sign Up Form
@@ -139,7 +136,7 @@ const onSignup = (e) => {
               />
               <button type="submit" style={{ backgroundColor: "green", color: "#fff", fontSize: "35px" }}>Sign Up</button>
               <p style={{ color: "red" }}>{errorMessage}</p>
-              {/*<p>Or Sign up using:</p>
+              <p>Or Sign up using:</p>
               <div className="social-icons">
               <a href="#" className="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
@@ -151,15 +148,11 @@ const onSignup = (e) => {
                   <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
                 </svg>
                 </a>
-          </div>*/}
-              <p>
-                <h5>
-                Already have an account?
+              </div>
+                <h5>Already have an account? </h5>
                 <button type="submit" style={{ backgroundColor: "#3498db", color: "#fff",width: "120px",height: "50px", fontSize: "25px" }}onClick={toggleMode}>
                   Login
                 </button>
-                </h5>
-              </p>
             </form>
           )}
         </div>
