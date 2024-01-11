@@ -1,6 +1,6 @@
-const express = require("express");
-const cors = require("cors");
-const axios = require("axios");
+import express from 'express';
+import cors from 'cors';
+import axios from 'axios';
 
 const app = express();
 app.use(express.json());
@@ -45,5 +45,4 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// vvv On port 3001!
 app.listen(3001);

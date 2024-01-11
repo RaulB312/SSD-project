@@ -1,12 +1,14 @@
-POST http://localhost:3001/login Content-Type: application/json
+POST http://localhost:3000/login 
+Content-Type: application/json
 
 {
-"username": "raul4", "secret": "12345678"
+"username": "raul", "secret": "1234"
 }
 
 ###
 
-POST http://localhost:3001/signup Content-Type: application/json
+POST http://localhost:3001/signup 
+Content-Type: application/json
 
 {
 "username": "rauljay", "secret": "12345678", "email": "rauljay012345@gmail.com", "first_name": "Raul", "last_name": "Barb"
